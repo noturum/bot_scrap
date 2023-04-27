@@ -6,7 +6,6 @@ Created on Tue Apr 27 12:34:11 2021
 """
 import requests.exceptions
 import urllib3.exceptions
-
 import drom
 import parser_avito as avito
 import telebot
@@ -768,7 +767,7 @@ try:
 
 
 
-    bot.polling(none_stop=True, interval=1)
+
 except requests.exceptions.ConnectionError:
     print('polling error')
 except urllib3.exceptions.ConnectionError:
